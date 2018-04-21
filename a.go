@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"../test/str1"
+	"strconv"
 )
 
 func main(){
@@ -13,7 +14,14 @@ func main(){
 	f:=test(x)
 	f()
 	*/
+	var user str1.User
+	user.Id=1
+	user.Name="张三"
+	user.Age=20
+	user.Add="北京"
 	fmt.Println(str1.ReturnStr())
+	fmt.Printf("编号:%s,姓名:%s,年龄:%s,地址:%s\n",strconv.Itoa(user.Id),
+		user.Name,strconv.Itoa(user.Age),user.Add)
 	Copy1()
 
 }
