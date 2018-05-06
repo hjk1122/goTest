@@ -23,6 +23,7 @@ func main(){
 	fmt.Printf("编号:%s,姓名:%s,年龄:%s,地址:%s\n",strconv.Itoa(user.Id),
 		user.Name,strconv.Itoa(user.Age),user.Add)
 	Copy1()
+	str1.Ptr()
 
 }
 func Copy1(){
