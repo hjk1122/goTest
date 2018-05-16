@@ -25,6 +25,7 @@ func main(){
 	Copy1()
 	str1.Ptr()
 
+
 }
 func Copy1(){
 	s1:=[]int{1,2,3,4,5}
