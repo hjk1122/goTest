@@ -18,12 +18,15 @@ func main(){
 	user.Id=1
 	user.Name="张三"
 	user.Age=20
-	user.Add="北京"
+	user.Add=""
 	fmt.Println(str1.ReturnStr())
 	fmt.Printf("编号:%s,姓名:%s,年龄:%s,地址:%s\n",strconv.Itoa(user.Id),
 		user.Name,strconv.Itoa(user.Age),user.Add)
 	Copy1()
 	str1.Ptr()
+	var m=make(map[int32]string)
+	m=str1.User1(1,"张三")
+	fmt.Println(m)
 
 
 }
